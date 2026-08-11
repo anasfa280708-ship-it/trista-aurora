@@ -1,0 +1,361 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Trista Aurora 🎀</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Decorations -->
+    <div class="floating-container">
+        <span>🎀</span>
+        <span>🌷</span>
+        <span>✨</span>
+        <span>💗</span>
+        <span>🌸</span>
+        <span>⭐</span>
+        <span>🧸</span>
+        <span>🎈</span>
+    </div>
+
+    <!-- MUSIC -->
+    <audio id="birthdayMusic" loop>
+        <!-- Masukkan file musik kamu di sini jika mau -->
+        <!-- Contoh:
+        <source src="music.mp3" type="audio/mpeg">
+        -->
+    </audio>
+
+    <!-- =========================
+         OPENING
+    ========================== -->
+    <section id="opening" class="page active">
+
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+
+        <div class="opening-card">
+
+            <div class="tiny-text">
+                ✨ A LITTLE SURPRISE FOR ✨
+            </div>
+
+            <h1>
+                Trista<br>
+                <span>Aurora</span>
+            </h1>
+
+            <div class="cute-character">
+                🧸
+            </div>
+
+            <p>
+                Ada sesuatu yang mau<br>
+                dikasih ke kamu...
+            </p>
+
+            <button id="startBtn" class="cute-btn">
+                💌 Buka Surprise
+            </button>
+
+            <div class="hint">
+                jangan takut, bukan tagihan 😭
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BIRTHDAY
+    ========================== -->
+    <section id="birthday" class="page">
+
+        <div class="birthday-card">
+
+            <div class="cake">
+                🎂
+            </div>
+
+            <div class="small-title">
+                TODAY IS YOUR DAY!
+            </div>
+
+            <h2>
+                HAPPY<br>
+                <span>BIRTHDAY!</span>
+            </h2>
+
+            <h3>🎀 Trista Aurora 🎀</h3>
+
+            <p>
+                Selamat ulang tahun! 🥳
+            </p>
+
+            <p class="description">
+                Semoga hari ini dipenuhi banyak kebahagiaan,
+                makanan enak, hadiah bagus, dan tentunya
+                hal-hal yang bikin kamu senyum terus! 🌷
+            </p>
+
+            <button class="next-btn" onclick="showPage('about')">
+                Lanjut ➜
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT TRISTA
+    ========================== -->
+    <section id="about" class="page">
+
+        <div class="content">
+
+            <div class="section-label">
+                🌷 LITTLE THINGS
+            </div>
+
+            <h2>
+                Kenapa Trista<br>
+                <span>harus bahagia?</span>
+            </h2>
+
+            <p class="subtitle">
+                Karena hari ini adalah hari spesial kamu.
+            </p>
+
+            <div class="cards">
+
+                <div class="info-card">
+                    <div class="icon">🌸</div>
+                    <h3>Be Happy</h3>
+                    <p>
+                        Semoga kamu selalu punya banyak
+                        alasan untuk tersenyum.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon">✨</div>
+                    <h3>Keep Shining</h3>
+                    <p>
+                        Tetap jadi Trista yang unik
+                        dan menyenangkan.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon">🧸</div>
+                    <h3>Stay Cute</h3>
+                    <p>
+                        Jangan lupa tetap cute,
+                        walaupun kadang ngeselin 😭
+                    </p>
+                </div>
+
+            </div>
+
+            <button class="next-btn" onclick="showPage('surprise')">
+                Ada Surprise Lagi 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SURPRISE
+    ========================== -->
+    <section id="surprise" class="page">
+
+        <div class="surprise-container">
+
+            <div class="section-label">
+                🎁 SECRET SURPRISE
+            </div>
+
+            <h2>
+                Jangan klik<br>
+                <span>kotaknya!</span>
+            </h2>
+
+            <p>
+                Serius. Jangan. 😐
+            </p>
+
+            <div id="giftBox" class="gift-box">
+                <div class="gift-lid"></div>
+                <div class="gift-body">🎁</div>
+            </div>
+
+            <p class="click-hint">
+                👆 klik kalau berani
+            </p>
+
+            <div id="surpriseMessage" class="surprise-message">
+
+                <div class="message-emoji">
+                    😭
+                </div>
+
+                <h3>
+                    KAN UDAH DIBILANG JANGAN!
+                </h3>
+
+                <p>
+                    Tapi gapapa deh...
+                </p>
+
+                <strong>
+                    HAPPY BIRTHDAY, TRISTA! 🎉
+                </strong>
+
+                <button class="next-btn" onclick="showPage('letter')">
+                    Buka Pesan 💌
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LETTER
+    ========================== -->
+    <section id="letter" class="page">
+
+        <div class="letter">
+
+            <div class="letter-top">
+                💌
+            </div>
+
+            <div class="section-label">
+                A LITTLE MESSAGE
+            </div>
+
+            <h2>
+                Dear Trista 🌷
+            </h2>
+
+            <div class="letter-content">
+
+                <p>
+                    Selamat ulang tahun yaa! 🎂
+                </p>
+
+                <p>
+                    Semoga di umur yang baru ini,
+                    banyak hal baik yang datang ke kamu.
+                    Semoga semua yang kamu usahakan
+                    bisa berjalan dengan lancar.
+                </p>
+
+                <p>
+                    Semoga kamu selalu dikelilingi orang-orang
+                    yang baik, punya banyak cerita seru,
+                    dan tentunya punya banyak alasan
+                    untuk tersenyum setiap harinya. ✨
+                </p>
+
+                <p>
+                    Makasih juga udah jadi teman yang seru
+                    selama ini.
+                </p>
+
+                <p class="funny">
+                    Jangan berubah jadi NPC ya 😭
+                </p>
+
+                <p>
+                    Pokoknya enjoy your day,
+                    makan yang enak, dan jangan lupa bahagia! 🎀
+                </p>
+
+                <div class="signature">
+                    From your friend,<br>
+                    <strong>Anas 💗</strong>
+                </div>
+
+            </div>
+
+            <button class="next-btn" onclick="showPage('final')">
+                Masih ada satu lagi... 👀
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+    <section id="final" class="page">
+
+        <div class="final-container">
+
+            <div class="stars">
+                ✦ ✧ ✦ ✧ ✦
+            </div>
+
+            <div class="big-cake">
+                🎂
+            </div>
+
+            <h1>
+                HAPPY<br>
+                <span>BIRTHDAY</span>
+            </h1>
+
+            <h2>
+                TRISTA AURORA 🎀
+            </h2>
+
+            <p>
+                Semoga tahun ini menjadi<br>
+                salah satu tahun terbaikmu! ✨
+            </p>
+
+            <div class="final-decoration">
+                🌷 💗 🧸 💗 🌷
+            </div>
+
+            <button id="celebrateBtn" class="cute-btn">
+                🎉 Celebrate!
+            </button>
+
+            <div class="made-by">
+                Made with 💗 by Anas
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONFETTI -->
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
